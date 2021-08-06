@@ -1,1 +1,40 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+
+// Sign up
+#sign-up-form {
+  font-family: 'Spectral', serif;
+}
+
+#sign-up {
+  font-family: 'Spectral', serif;
+  border-radius: 2px
+}
+
+#sign-up:hover {
+  background-color: #E1Ad01
+}
+
+// Sign in
+#sign-in-form {
+  font-family: 'Spectral', serif;
+}
+
+#sign-in {
+  font-family: 'Spectral', serif;
+  border-radius: 2px
+}
+
+#sign-in:hover {
+  background-color: #E1Ad01
+}
+
+// Sign out
+#sign-out {
+  font-family: 'Spectral', serif;
+  border-radius: 2px
+}
+
+#sign-out:hover {
+  background-color: #E1Ad01
+}
