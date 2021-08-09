@@ -1,9 +1,34 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
 
+body {
+  background-color: #1b253c
+}
+h1 {
+  color: #E1Ad01;
+  text-shadow: 4px 4px #a2411e;
+  display: flex;
+  justify-content: center;
+  text-align: center
+}
+h2 {
+ color: #E1Ad01;
+ text-shadow: 4px 4px #a2411e;
+ display: flex;
+ justify-content: center;
+ text-align: center
+}
+h3 {
+  color:  #E1Ad01;
+  text-shadow: 4px 4px #a2411e
+}
 // Sign up
 #sign-up-form {
   font-family: 'Spectral', serif;
+  color: #E1Ad01;
+  display: flex;
+  justify-content: center;
+  padding: 10px
 }
 
 #sign-up {
@@ -18,6 +43,10 @@
 // Sign in
 #sign-in-form {
   font-family: 'Spectral', serif;
+  color: #E1Ad01;
+  display: flex;
+  justify-content: center;
+  text-align: center
 }
 
 #sign-in {
@@ -29,12 +58,30 @@
   background-color: #E1Ad01
 }
 
+
+
 // Sign out
 #sign-out {
   font-family: 'Spectral', serif;
-  border-radius: 2px
+  border-radius: 2px;
+  color: #E1Ad01
 }
 
 #sign-out:hover {
   background-color: #E1Ad01
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px
+}
+#change-password {
+  color:  #E1Ad01;
+  text-shadow: 4px 4px #a2411e
+}
+
+// #change-password:hover {
+//   background-color: #E1Ad01
+// }

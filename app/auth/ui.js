@@ -21,6 +21,7 @@ const onSignInSuccess = (response) => {
   $("#sign-in-header").css('display', 'none')
   $("#sign-up-form").css("display", "none")
   $("#sign-up-header").css("display", "none")
+  $(".container").css("display", "block")
 }
 
 const onSignOutSuccess = () => {
