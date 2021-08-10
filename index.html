@@ -16,7 +16,7 @@
   <br>
     <h1>The Social Language Experiment</h1>
   </br>
-
+    <img src="public/bookslearning.jpg" class="center">
   <!-- sign up -->
   <br>
     <h2 id="sign-up-header" style="display:block">Sign-up and start your language journey for free!</h2>
@@ -51,14 +51,14 @@
         </br>
 
 
-<br>
-<div class="container" style="display:none">
-  <button id="create-vocab" type="submit" class="btn btn-warning">CREATE</button>
-  <button id="read-vocab" type="submit" class="btn btn-warning">READ</button>
-  <button id="update-vocab" type="submit" class="btn btn-warning">UPDATE</button>
-  <button id="delete-vocab" type="submit" class="btn btn-warning">DELETE</button>
-</div>
-</br>
+        <br>
+          <div class="container" style="display:none">
+          <button id="create" type="submit" class="btn btn-warning">CREATE</button>
+          <button id="read" type="submit" class="btn btn-warning">READ</button>
+          <button id="update" type="submit" class="btn btn-warning">UPDATE</button>
+          <button id="delete" type="submit" class="btn btn-warning">DELETE</button>
+          </div>
+        </br>
 
 
 <!-- I want each of these options to show when you click the corresponding button. I would also like my input labels to appear ordered in more of a list vertically instead of horizontally -->
@@ -89,9 +89,19 @@
 
 <br>
 <form id="update-vocab-form" class="form" style="display:none">
-<h4>Update Index Cards: </h4>
-<label>Card ID: </label>
-<input name="vocab[id]" type="text">
+<h4>Update Index Card: </h4>
+  <label>Card ID: </label>
+  <input name="vocab[id]" type="text">
+  <label> Word:</label>
+  <input name="vocab[word]" type="text">
+  <label> Pronunciation</label>
+  <input name="vocab[pronunciation]" type="text">
+  <label> Definition: </label>
+  <input name="vocab[definition]" type="text">
+  <label> Sentence:</label>
+  <input name="vocab[sentence]" type="text">
+  <label> Comfort Level:</label>
+  <input name="vocab[comfort_level]" type="text">
 <input type="submit" value="Update Index Card!">
 </form>
 </br>
@@ -105,6 +115,7 @@
 </form>
 </br>
 
+<ul id="vocab_list"></ul>
   <!-- sign out -->
   <h2 id="sign-out-header" style="display:none">Want to Sign Out?</h2>
   <button id="sign-out" type="button" style="display:none">

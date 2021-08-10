@@ -92,6 +92,33 @@ onReadVocab = (event) => {
   .catch(ui.onFailure)
 }
 
+const showForm = function (event) {
+  const btnId = $(event.target).attr('id')
+  if (btnId === 'create') {
+    $('#create-vocab').show()
+    $('#read-vocab').hide()
+    $('#update-vocab').hide()
+    $('#delete-vocab').hide()
+  }
+  if (btnId === 'read') {
+    $("#create-vocab").hide()
+    $("#read-vocab").show()
+    $("#update-vocab").hide()
+    $("#delete-vocab").hide()
+  }
+  if (btnId === 'update') {
+    $("#create-vocab").hide()
+    $("#read-vocab").hide()
+    $("#update-vocab").show()
+    $("#delete-vocab").hide()
+  }
+  if (btnId === 'delete') {
+    $("#create-vocab").hide()
+    $("#read-vocab").hide()
+    $("#update-vocab").hide()
+    $("#delete-vocab").show()
+  }
+}
 
 const onSignOut = function () {
   api.signOut()
@@ -107,5 +134,6 @@ module.exports = {
   onReadVocab,
   onUpdateVocab,
   onCreateVocab,
-  onDeleteVocab
+  onDeleteVocab,
+  showForm
 }

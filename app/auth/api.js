@@ -33,40 +33,42 @@ const signOut = function () {
 
 const changePassword = function () {
 return $.ajax({
-url: config.apiUrl + '/change-password',
-method: 'PATCH',
-data: data,
-headers: {
- Authorization: 'Bearer ' + store.token
-}
+  url: config.apiUrl + '/change-password',
+  method: 'PATCH',
+  data: data,
+  headers: { Authorization: `Bearer ${store.user.token}`}
 })
 }
 
-const createVocab = function () {
+const createVocab = function (data) {
 return $.ajax({
-url: config.apiUrl + '/create-vocab',
-method: 'POST',
-data: data,
-// not sure if this will need more
+  url: config.apiUrl + '/vocabs',
+  method: 'POST',
+  data,
+  headers: {
+    Authorization: 'Bearer ' + store.token
+  }
 })
 }
 
 const readVocab = function () {
 return $.ajax({
-url: config.apiUrl + '/read-vocab',
+url: config.apiUrl + '/vocabs',
 method: 'POST',
 data,
-// not sure what else is needed
+headers: {
+  Authorization: `Bearer ${store.user.token}`
+}
 })
 }
 
 const updateVocab = function () {
 return $.ajax({
-url: config.apiUrl + '/update-vocab',
+url: config.apiUrl + '/vocabs',
 method: 'PATCH',
 data,
 headers: {
-  Authorization: 'Bearer ' + store.token
+  Authorization: `Bearer ${store.user.token}`
   }
 // not sure what will be needed here just yet.
 })
@@ -74,10 +76,10 @@ headers: {
 
 const deleteVocab = function () {
 return $.ajax({
-url: config.apiUrl + '/delete-vocab',
+url: config.apiUrl + '/vocabs/' + id,
 method: 'DELETE',
  headers: {
-    Authorization: 'Bearer ' + store.token
+    Authorization: 'Bearer ' + store.user.token
     }
 })
 }

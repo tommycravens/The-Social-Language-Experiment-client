@@ -25,10 +25,10 @@ const onSignInSuccess = (response) => {
   $("#change-password").css("display", "block")
   $("#change-password-header").css("display", "block")
   // all of these may move to when the actually corresponding button is clicked instead of just on sign in.
-  $("#create-vocab-form").css("display", "block")
-  $("#read-vocab-form").css("display", "block")
-  $("#update-vocab-form").css("display", "block")
-  $("#delete-vocab-form").css("display", "block")
+  // $("#create-vocab-form").css("display", "block")
+  // $("#read-vocab-form").css("display", "block")
+  // $("#update-vocab-form").css("display", "block")
+  // $("#delete-vocab-form").css("display", "block")
 }
 
 const onSignOutSuccess = () => {
@@ -42,6 +42,11 @@ const onSignOutSuccess = () => {
   $("#sign-out-header").css('display', 'none')
   $("#change-password").css("display", "none")
   $("#change-password-header").css("display", "none")
+  $(".container").css("display", "none")
+  $("#create-vocab-form").css("display", "none")
+  $("#read-vocab-form").css("display", "none")
+  $("#update-vocab-form").css("display", "none")
+  $("#delete-vocab-form").css("display", "none")
 }
 
 
