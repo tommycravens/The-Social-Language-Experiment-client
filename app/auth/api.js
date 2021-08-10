@@ -42,9 +42,53 @@ headers: {
 })
 }
 
+const createVocab = function () {
+return $.ajax({
+url: config.apiUrl + '/create-vocab',
+method: 'POST',
+data: data,
+// not sure if this will need more
+})
+}
+
+const readVocab = function () {
+return $.ajax({
+url: config.apiUrl + '/read-vocab',
+method: 'POST',
+data,
+// not sure what else is needed
+})
+}
+
+const updateVocab = function () {
+return $.ajax({
+url: config.apiUrl + '/update-vocab',
+method: 'PATCH',
+data,
+headers: {
+  Authorization: 'Bearer ' + store.token
+  }
+// not sure what will be needed here just yet.
+})
+}
+
+const deleteVocab = function () {
+return $.ajax({
+url: config.apiUrl + '/delete-vocab',
+method: 'DELETE',
+ headers: {
+    Authorization: 'Bearer ' + store.token
+    }
+})
+}
+
 module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword
+  changePassword,
+  createVocab,
+  readVocab,
+  updateVocab,
+  deleteVocab
 }

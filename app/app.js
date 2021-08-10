@@ -10,4 +10,8 @@ $(() => {
   $("#sign-in-form").on("submit", authEvents.onSignIn)
   $("#sign-out").on("click", authEvents.onSignOut)
   $("change-password").on("submit", authEvents.onChangePassword)
+  // $("create-vocab").on("", authEvents.onCreateVocab)
+  // $("read-vocab").on("", authEvents.onReadVocab)
+  // $("update-vocab").on("", authEvents.onUpdateVocab)
+  // $("delete-vocab").on("", authEvents.onDeleteVocab)
 })

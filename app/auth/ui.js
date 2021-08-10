@@ -24,6 +24,7 @@ const onSignInSuccess = (response) => {
   $(".container").css("display", "block")
   $("#change-password").css("display", "block")
   $("#change-password-header").css("display", "block")
+  // all of these may move to when the actually corresponding button is clicked instead of just on sign in.
   $("#create-vocab-form").css("display", "block")
   $("#read-vocab-form").css("display", "block")
   $("#update-vocab-form").css("display", "block")
@@ -43,7 +44,28 @@ const onSignOutSuccess = () => {
   $("#change-password-header").css("display", "none")
 }
 
-const onChangePasswordSuccess = () => {}
+
+// I am not totally sure I want the ui to act in these yet. I know that I want the form fields for CRUD to only come up when you press the main button, but I need to think on how I will do that.
+const onChangePasswordSuccess = () => {
+
+}
+
+const onCreateVocabSuccess = () => {
+
+}
+
+const onReadVocabSuccess = () => {
+
+}
+
+const onUpdateVocabSuccess = () => {
+
+}
+
+const onDeleteVocabSuccess = () => {
+
+}
+
 
 
 
@@ -57,5 +79,10 @@ module.exports = {
   onSignUpSuccess,
   onFailure,
   onSignInSuccess,
-  onSignOutSuccess
+  onSignOutSuccess,
+  onChangePasswordSuccess,
+  onCreateVocabSuccess,
+  onReadVocabSuccess,
+  onUpdateVocabSuccess,
+  onDeleteVocabSuccess
 }

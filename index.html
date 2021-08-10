@@ -13,14 +13,14 @@
     </head>
     <body>
 
-      <br>
+  <br>
     <h1>The Social Language Experiment</h1>
-      </br>
+  </br>
 
-      <!-- sign up -->
-      <br>
-      <h2 id="sign-up-header" style="display:block">Sign-up and start your language journey for free!</h2>
-      </br>
+  <!-- sign up -->
+  <br>
+    <h2 id="sign-up-header" style="display:block">Sign-up and start your language journey for free!</h2>
+  </br>
 
       <form id="sign-up-form">
         <label>Email:</label>
@@ -31,7 +31,8 @@
         <input name="credentials[password_confirmation]" type="password">
         <input id="sign-up" type="submit" value="Create Account">
       </form>
-        <p id="message"></p>
+
+    <p id="message"></p>
 
   <!-- sign in -->
       <!-- I want to greet user with their name at sign-in: how will I go about that? var username = prompt("What's your name?")
@@ -59,9 +60,11 @@
 </div>
 </br>
 
+
+<!-- I want each of these options to show when you click the corresponding button. I would also like my input labels to appear ordered in more of a list vertically instead of horizontally -->
 <br>
 <form id="create-vocab-form" class="form" style="display:none">
-  <h4>Create Vocab Word</h4>
+  <h4>Create New Index Card: </h4>
   <label> Word:</label>
   <input name="vocab[word]" type="text">
   <label> Pronunciation</label>
@@ -78,28 +81,29 @@
 
 <br>
 <form id="read-vocab-form" class="form" style="display:none">
-  <h4>Read Vocab Words</h4>
-  <label></label>
-  <input type="submit" value="Read Index Card!">
+  <h4>Find All Index Cards: </h4>
+  <label>Click here</label>
+  <input type="button" id="read-vocabs" value="Find Index Cards!">
 </form>
 </br>
 
 <br>
 <form id="update-vocab-form" class="form" style="display:none">
-<h4>Update Vocab Words</h4>
-<label></label>
+<h4>Update Index Cards: </h4>
+<label>Card ID: </label>
+<input name="vocab[id]" type="text">
 <input type="submit" value="Update Index Card!">
 </form>
 </br>
 
 <br>
 <form id="delete-vocab-form" class="form" style="display:none">
-<h4>Delete Vocab Words</h4>
-<label></label>
+<h4>Delete Index Cards: </h4>
+<label>Card ID: </label>
+<input name="vocab[id]" type="text">
 <input type="submit" value="Delete Index Card!">
 </form>
 </br>
-
 
   <!-- sign out -->
   <h2 id="sign-out-header" style="display:none">Want to Sign Out?</h2>
