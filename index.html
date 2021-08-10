@@ -12,6 +12,7 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
+
       <br>
     <h1>The Social Language Experiment</h1>
       </br>
@@ -28,16 +29,17 @@
         <input name="credentials[password]" type="password">
         <label>Password Confirmation:</label>
         <input name="credentials[password_confirmation]" type="password">
-        <input id="sign-up" type="submit" value="Sign Up">
+        <input id="sign-up" type="submit" value="Create Account">
       </form>
         <p id="message"></p>
 
   <!-- sign in -->
       <!-- I want to greet user with their name at sign-in: how will I go about that? var username = prompt("What's your name?")
                   document.write("Welcome Back " + username/name + "!" + " We are so glad you decided to come back and continue learning with us!") would be super cool to make this a modal, but I also don't know which file to use-->
-      <br>
+    <br>
       <h2 id="sign-in-header" style="display:block">Welcome Back!</h2>
-      </br>
+    </br>
+        <br>
           <form id="sign-in-form" style="display:block">
             <label>Email:</label>
             <input name="credentials[email]" type="email">
@@ -45,16 +47,57 @@
             <input name="credentials[password]" type="password">
             <input id="sign-in" type="submit" value="Sign In">
           </form>
-<br>
+        </br>
+
+
 <br>
 <div class="container" style="display:none">
-  <button id="create-word" type="submit" class="btn btn-warning">CREATE</button>
-  <button id="read-word" type="submit" class="btn btn-warning">READ</button>
-  <button id="update-word" type="submit" class="btn btn-warning">UPDATE</button>
-  <button id="delete-word" type="submit" class="btn btn-warning">DELETE</button>
+  <button id="create-vocab" type="submit" class="btn btn-warning">CREATE</button>
+  <button id="read-vocab" type="submit" class="btn btn-warning">READ</button>
+  <button id="update-vocab" type="submit" class="btn btn-warning">UPDATE</button>
+  <button id="delete-vocab" type="submit" class="btn btn-warning">DELETE</button>
 </div>
-
 </br>
+
+<br>
+<form id="create-vocab-form" class="form" style="display:none">
+  <h4>Create Vocab Word</h4>
+  <label> Word:</label>
+  <input name="vocab[word]" type="text">
+  <label> Pronunciation</label>
+  <input name="vocab[pronunciation]" type="text">
+  <label> Definition: </label>
+  <input name="vocab[definition]" type="text">
+  <label> Sentence:</label>
+  <input name="vocab[sentence]" type="text">
+  <label> Comfort Level:</label>
+  <input name="vocab[comfort_level]" type="text">
+  <input type="submit" value="Create Index Card!">
+</form>
+</br>
+
+<br>
+<form id="read-vocab-form" class="form" style="display:none">
+  <h4>Read Vocab Words</h4>
+  <label></label>
+  <input type="submit" value="Read Index Card!">
+</form>
+</br>
+
+<br>
+<form id="update-vocab-form" class="form" style="display:none">
+<h4>Update Vocab Words</h4>
+<label></label>
+<input type="submit" value="Update Index Card!">
+</form>
+</br>
+
+<br>
+<form id="delete-vocab-form" class="form" style="display:none">
+<h4>Delete Vocab Words</h4>
+<label></label>
+<input type="submit" value="Delete Index Card!">
+</form>
 </br>
 
 
@@ -64,16 +107,18 @@
     Sign Out
   </button>
 
-  <br>
+<br>
 <!-- Change Password -->
-<h3>Change Password</h3>
-<form id="change-password">
+<br>
+<h3 id="change-password-header" style="display:none">Change Password</h3>
+<form id="change-password" style="display:none">
   <label> Old Password:</label>
   <input name="passwords[old]" type="password">
   <label>New Password:</label>
   <input name="passwords[new]" type="password">
   <input type="submit" value="change password">
 </form>
+</br>
 </br>
 
     </body>

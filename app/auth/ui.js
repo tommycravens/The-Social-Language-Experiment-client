@@ -22,6 +22,12 @@ const onSignInSuccess = (response) => {
   $("#sign-up-form").css("display", "none")
   $("#sign-up-header").css("display", "none")
   $(".container").css("display", "block")
+  $("#change-password").css("display", "block")
+  $("#change-password-header").css("display", "block")
+  $("#create-vocab-form").css("display", "block")
+  $("#read-vocab-form").css("display", "block")
+  $("#update-vocab-form").css("display", "block")
+  $("#delete-vocab-form").css("display", "block")
 }
 
 const onSignOutSuccess = () => {
@@ -33,7 +39,13 @@ const onSignOutSuccess = () => {
   $("#sign-up-header").css('display', 'block')
   $("#sign-out").css('display', 'none')
   $("#sign-out-header").css('display', 'none')
+  $("#change-password").css("display", "none")
+  $("#change-password-header").css("display", "none")
 }
+
+const onChangePasswordSuccess = () => {}
+
+
 
 const onFailure = (error) => {
   console.log(`Error, status: ${error.status}`)
