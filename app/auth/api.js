@@ -31,12 +31,12 @@ const signOut = function () {
   })
 }
 
-const changePassword = function () {
+const changePassword = function (data) {
 return $.ajax({
   url: config.apiUrl + '/change-password',
   method: 'PATCH',
   data: data,
-  headers: { Authorization: `Bearer ${store.user.token}`}
+  headers: { Authorization: `Bearer ${store.token}`}
 })
 }
 
@@ -54,10 +54,9 @@ return $.ajax({
 const readVocab = function () {
 return $.ajax({
 url: config.apiUrl + '/vocabs',
-method: 'POST',
-data,
+method: 'GET',
 headers: {
-  Authorization: `Bearer ${store.user.token}`
+  Authorization: `Bearer ${store.token}`
 }
 })
 }
@@ -68,7 +67,7 @@ url: config.apiUrl + '/vocabs',
 method: 'PATCH',
 data,
 headers: {
-  Authorization: `Bearer ${store.user.token}`
+  Authorization: `Bearer ${store.token}`
   }
 // not sure what will be needed here just yet.
 })
@@ -79,7 +78,7 @@ return $.ajax({
 url: config.apiUrl + '/vocabs/' + id,
 method: 'DELETE',
  headers: {
-    Authorization: 'Bearer ' + store.user.token
+    Authorization: 'Bearer ' + store.token
     }
 })
 }

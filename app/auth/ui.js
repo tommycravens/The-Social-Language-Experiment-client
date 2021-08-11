@@ -21,14 +21,14 @@ const onSignInSuccess = (response) => {
   $("#sign-in-header").css('display', 'none')
   $("#sign-up-form").css("display", "none")
   $("#sign-up-header").css("display", "none")
-  $(".container").css("display", "block")
+  // $(".container").css("display", "block")
   $("#change-password").css("display", "block")
   $("#change-password-header").css("display", "block")
   // all of these may move to when the actually corresponding button is clicked instead of just on sign in.
-  // $("#create-vocab-form").css("display", "block")
-  // $("#read-vocab-form").css("display", "block")
-  // $("#update-vocab-form").css("display", "block")
-  // $("#delete-vocab-form").css("display", "block")
+  $("#create-vocab-form").css("display", "block")
+  $("#read-vocab-form").css("display", "block")
+  $("#update-vocab-form").css("display", "block")
+  $("#delete-vocab-form").css("display", "block")
 }
 
 const onSignOutSuccess = () => {
@@ -52,31 +52,39 @@ const onSignOutSuccess = () => {
 
 // I am not totally sure I want the ui to act in these yet. I know that I want the form fields for CRUD to only come up when you press the main button, but I need to think on how I will do that.
 const onChangePasswordSuccess = () => {
-
+$("#message").text('Password change was successful')
+$("#change-password").trigger("reset")
 }
 
 const onCreateVocabSuccess = () => {
+$("#message").text(`Vocab word was created successfully`)
+$("#create-vocab-form").trigger("reset")
 
 }
 
 const onReadVocabSuccess = () => {
+$("#message").text(`Successfully displaying your words`)
+$("#read-vocab-form").trigger("reset")
+
 
 }
 
 const onUpdateVocabSuccess = () => {
-
+$("#message").text(`Successfully updated your card`)
+ $("#update-vocab-form").trigger("reset")
 }
 
 const onDeleteVocabSuccess = () => {
-
+$("#message").text(`Successfully deleted your card`)
+ $("#delete-vocab-form").trigger("reset")
 }
 
 
 
 
 const onFailure = (error) => {
-  console.log(`Error, status: ${error.status}`)
-  $("#message").text(`Error... status: ${error.status}`)
+  console.log(`Oops something went wrong! ${error.status}`)
+  $("#message").text(`Oops something went wrong ${error.status}`);
   $("#sign-up-form").trigger("reset")
 }
 

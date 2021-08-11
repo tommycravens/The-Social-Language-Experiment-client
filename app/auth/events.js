@@ -44,13 +44,14 @@ const onSignIn = function (event) {
 
 const onChangePassword = function (event) {
   event.preventDefault()
+  const data = getFormFields(event.target)
 
   api.changePassword(data)
   .then(ui.onChangePasswordSuccess)
   .catch(ui.onFailure)
 }
 
-onCreateVocab = (event) => {
+const onCreateVocab = (event) => {
   event.preventDefault()
   const vocabData = getFormFields(event.target)
 
@@ -59,7 +60,7 @@ onCreateVocab = (event) => {
   .catch(ui.onFailure)
 }
 
-onUpdateVocab = (event) => {
+const onUpdateVocab = (event) => {
 event.preventDefault()
 const vocabData = getFormField(event.target)
 console.log(data)
@@ -73,7 +74,7 @@ api
   .catch(ui.onFailure)
 }
 
-onDeleteVocab = (event) => {
+const onDeleteVocab = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
   console.log(data)
@@ -85,7 +86,7 @@ onDeleteVocab = (event) => {
   .catch(ui.onFailure)
 }
 
-onReadVocab = (event) => {
+const onReadVocab = (event) => {
   event.preventDefault()
   api.readVocab()
   .then(ui.onReadVocabSuccess)
@@ -95,28 +96,28 @@ onReadVocab = (event) => {
 const showForm = function (event) {
   const btnId = $(event.target).attr('id')
   if (btnId === 'create') {
-    $('#create-vocab').show()
-    $('#read-vocab').hide()
-    $('#update-vocab').hide()
-    $('#delete-vocab').hide()
+    // $('#create-vocab').show()
+    // $('#read-vocab').hide()
+    // $('#update-vocab').hide()
+    // $('#delete-vocab').hide()
   }
   if (btnId === 'read') {
-    $("#create-vocab").hide()
-    $("#read-vocab").show()
-    $("#update-vocab").hide()
-    $("#delete-vocab").hide()
+    // $("#create-vocab").hide()
+    // $("#read-vocab").show()
+    // $("#update-vocab").hide()
+    // $("#delete-vocab").hide()
   }
   if (btnId === 'update') {
-    $("#create-vocab").hide()
-    $("#read-vocab").hide()
-    $("#update-vocab").show()
-    $("#delete-vocab").hide()
+    // $("#create-vocab").hide()
+    // $("#read-vocab").hide()
+    // $("#update-vocab").show()
+    // $("#delete-vocab").hide()
   }
   if (btnId === 'delete') {
-    $("#create-vocab").hide()
-    $("#read-vocab").hide()
-    $("#update-vocab").hide()
-    $("#delete-vocab").show()
+  //   $("#create-vocab").hide()
+  //   $("#read-vocab").hide()
+  //   $("#update-vocab").hide()
+  //   $("#delete-vocab").show()
   }
 }
 
