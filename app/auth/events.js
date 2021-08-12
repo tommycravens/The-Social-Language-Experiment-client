@@ -62,12 +62,12 @@ const onCreateVocab = (event) => {
 
 const onUpdateVocab = (event) => {
 event.preventDefault()
-const vocabData = getFormField(event.target)
-console.log(data)
-const id = data.vocab.id
+const vocabData = getFormFields(event.target)
+console.log(vocabData)
+const id = vocabData.vocab.id
 api
-  .updateVocab(vocabId, vocabData)
-  .then(ui.readVocab)
+  .updateVocab(id, vocabData)
+  .then(api.readVocab)
   .then(ui.onReadVocabSuccess)
   .catch(ui.onFailure)
   .then(ui.onUpdateVocabSuccess)
@@ -93,33 +93,33 @@ const onReadVocab = (event) => {
   .catch(ui.onFailure)
 }
 
-const showForm = function (event) {
-  const btnId = $(event.target).attr('id')
-  if (btnId === 'create') {
-    // $('#create-vocab').show()
-    // $('#read-vocab').hide()
-    // $('#update-vocab').hide()
-    // $('#delete-vocab').hide()
-  }
-  if (btnId === 'read') {
-    // $("#create-vocab").hide()
-    // $("#read-vocab").show()
-    // $("#update-vocab").hide()
-    // $("#delete-vocab").hide()
-  }
-  if (btnId === 'update') {
-    // $("#create-vocab").hide()
-    // $("#read-vocab").hide()
-    // $("#update-vocab").show()
-    // $("#delete-vocab").hide()
-  }
-  if (btnId === 'delete') {
-  //   $("#create-vocab").hide()
-  //   $("#read-vocab").hide()
-  //   $("#update-vocab").hide()
-  //   $("#delete-vocab").show()
-  }
-}
+// const showForm = function (event) {
+//   const btnId = $(event.target).attr('id')
+//   if (btnId === 'create') {
+//     // $('#create-vocab').show()
+//     // $('#read-vocab').hide()
+//     // $('#update-vocab').hide()
+//     // $('#delete-vocab').hide()
+//   }
+//   if (btnId === 'read') {
+//     // $("#create-vocab").hide()
+//     // $("#read-vocab").show()
+//     // $("#update-vocab").hide()
+//     // $("#delete-vocab").hide()
+//   }
+//   if (btnId === 'update') {
+//     // $("#create-vocab").hide()
+//     // $("#read-vocab").hide()
+//     // $("#update-vocab").show()
+//     // $("#delete-vocab").hide()
+//   }
+//   if (btnId === 'delete') {
+//   //   $("#create-vocab").hide()
+//   //   $("#read-vocab").hide()
+//   //   $("#update-vocab").hide()
+//   //   $("#delete-vocab").show()
+//   }
+// }
 
 const onSignOut = function () {
   api.signOut()
@@ -136,5 +136,5 @@ module.exports = {
   onUpdateVocab,
   onCreateVocab,
   onDeleteVocab,
-  showForm
+  // showForm
 }

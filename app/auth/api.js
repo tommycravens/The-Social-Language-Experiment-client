@@ -61,9 +61,9 @@ headers: {
 })
 }
 
-const updateVocab = function () {
+const updateVocab = function (id, data) {
 return $.ajax({
-url: config.apiUrl + '/vocabs',
+url: config.apiUrl + '/vocabs/' + id,
 method: 'PATCH',
 data,
 headers: {
@@ -73,7 +73,7 @@ headers: {
 })
 }
 
-const deleteVocab = function () {
+const deleteVocab = function (id) {
 return $.ajax({
 url: config.apiUrl + '/vocabs/' + id,
 method: 'DELETE',

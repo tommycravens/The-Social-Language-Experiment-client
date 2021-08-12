@@ -56,15 +56,42 @@ $("#message").text('Password change was successful')
 $("#change-password").trigger("reset")
 }
 
-const onCreateVocabSuccess = () => {
+const onCreateVocabSuccess = (response) => {
 $("#message").text(`Vocab word was created successfully`)
 $("#create-vocab-form").trigger("reset")
-
+const word = response.vocab
+const wordhtml = `
+  <li>
+  word: ${word.word}
+  definition: ${word.definition}
+  pronunciation: ${word.pronunciation}
+  sentence: ${word.sentence}
+  comfortLevel: ${word.comfortLevel}
+  </li>
+`
+$("#vocab_list").html(wordhtml)
 }
 
-const onReadVocabSuccess = () => {
+const onReadVocabSuccess = (responseData) => {
 $("#message").text(`Successfully displaying your words`)
 $("#read-vocab-form").trigger("reset")
+const vocabs = responseData.vocabs
+
+let vocabsHtml = ''
+
+vocabs.forEach(vocab => {
+  vocabsHtml += `
+  <li>
+  word: ${vocab.word}
+  definition: ${vocab.definition}
+  pronunciation: ${vocab.pronunciation}
+  sentence: ${vocab.sentence}
+  comfortLevel: ${vocab.comfortLevel}
+  id: ${vocab._id}
+  </li>
+`
+})
+$('#vocab_list').html(vocabsHtml)
 
 
 }
