@@ -47,6 +47,7 @@ const onSignOutSuccess = () => {
   $("#read-vocab-form").css("display", "none")
   $("#update-vocab-form").css("display", "none")
   $("#delete-vocab-form").css("display", "none")
+  $("#vocab_list").css("display", "none")
 }
 
 
