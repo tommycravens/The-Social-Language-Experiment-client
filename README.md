@@ -18,8 +18,12 @@ This application is version 1.0 of my language learning app, The Social Language
 
 ## Logo:
 
-![logo](https://media.git.generalassemb.ly/user/37194/files/09a98300-036f-11ec-8f4d-914ead2e00c0)
+![logo](https://media.git.generalassemb.ly/user/37194/files/09a98300-036f-11ec-8f4d-914ead2e00c0git)
 
 ## Concept
 
-![concept](https://media.git.generalassemb.ly/user/37194/files/4c5a6380-034d-11ec-8560-97045d5b796)
+![concept](https://media.git.generalassemb.ly/user/37194/files/41202b80-037f-11ec-95df-b5e71c6e29bf)
+
+## Project Planning
+
+![projectschedule](https://media.git.generalassemb.ly/user/37194/files/76c51480-037f-11ec-9f35-258a04f5836e)
