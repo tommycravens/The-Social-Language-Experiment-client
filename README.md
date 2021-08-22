@@ -16,6 +16,10 @@ This application is version 1.0 of my language learning app, The Social Language
 
 ![wireframe2](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
 
-![logo](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
+## Logo:
+
+![logo](https://media.git.generalassemb.ly/user/37194/files/09a98300-036f-11ec-8f4d-914ead2e00c0)
+
+## Concept
 
 ![concept](https://media.git.generalassemb.ly/user/37194/files/4c5a6380-034d-11ec-8560-97045d5b796)
