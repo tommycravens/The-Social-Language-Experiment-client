@@ -7,10 +7,15 @@ This application is version 1.0 of my language learning app, The Social Language
 </h2>
 
 <h2>User Stories and Wire-frames: </h2>
-![concept](https://media.git.generalassemb.ly/user/37194/files/4c5a6380-034d-11ec-8560-97045d5b796)
 
-![wireframe](https://media.git.generalassemb.ly/user/37194/files/7875e480-034d-11ec-9ad1-b99d245e145a)
+## USER STORY:
 
-![wireframe](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
+![userstory](https://media.git.generalassemb.ly/user/37194/files/7875e480-034d-11ec-9ad1-b99d245e145a)
+
+## Wire-Frame:
+
+![wireframe2](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
 
 ![logo](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
+
+![concept](https://media.git.generalassemb.ly/user/37194/files/4c5a6380-034d-11ec-8560-97045d5b796)
