@@ -6,4 +6,11 @@ This application is version 1.0 of my language learning app, The Social Language
 <h2>Deployed link: https://tommycravens.github.io/The-Social-Language-Experiment-client/
 </h2>
 
-<h2>User Stories, Wire-frame, and Entity Relationship Diagram: </h2>
+<h2>User Stories and Wire-frames: </h2>
+![wireframe](https://media.git.generalassemb.ly/user/37194/files/4c5a6380-034d-11ec-8560-97045d5b796)
+
+![wireframe](https://media.git.generalassemb.ly/user/37194/files/7875e480-034d-11ec-9ad1-b99d245e145a)
+
+![wireframe](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
+
+![wireframe](https://media.git.generalassemb.ly/user/37194/files/93485900-034d-11ec-81e1-2cda0eecf763)
